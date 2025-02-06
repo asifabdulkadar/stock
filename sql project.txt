@@ -1,0 +1,39 @@
+-- create database emplo
+-- use emplo
+CREATE TABLE Employees1 (
+	s_no int(10),
+    Employee_id VARCHAR(20),
+    Employee_name VARCHAR(50),
+    DOB DATE,
+    Date_of_Joining DATE,
+    Salary DECIMAL(10, 2),
+    bonus DECIMAL(10, 2),
+    city VARCHAR(50),
+    address VARCHAR(100),
+    Department VARCHAR(30),
+    Employee_emailId VARCHAR(50),
+    employee_status ENUM('active', 'inactive')
+);
+INSERT INTO Employees (Employee_id, Employee_name, DOB, Date_of_Joining, Salary, bonus, city, address, Department, Employee_emailId, employee_status)
+VALUES
+("727622bad001", "Magesh Kumar", "2004-12-04", "2022-01-01", 230000, 23000, "Salem", "Omalur", "Data Analyst", "mahesss@gmail.com", "active"),
+("727622bad002", "John Doe", "1985-02-10", "2010-05-23", 50000, 5000, "Chennai", "T Nagar", "Software Engineer", "john.doe@example.com", "active"),
+("727622bad003", "Sree Karthik", "1992-07-15", "2020-04-20", 75000, 7000, "Chennai", "Mylapore", "Data Analyst", "sree.karthik@gmail.com", "inactive"),
+("727622bad004", "Anjali Ramesh", "1989-11-22", "2015-06-18", 60000, 4500, "Coimbatore", " Peelamedu", "HR", "anjali.ramesh@company.com", "active"),
+("727622bad005", "Dinesh Kumar", "1993-01-09", "2018-09-15", 80000, 6000, "Salem", "Seelanaickenpatti", "Sales Manager", "dinesh.kumar@gmail.com", "active"),
+("727622bad006", "Asha", "1990-03-14", "2017-08-05", 55000, 4000, "Bangalore", "Whitefield", "Software Engineer", "asha.patel@company.com", "active"),
+("727622bad007", "Kiran", "1988-05-30", "2012-11-13", 120000, 8000, "Chennai", "Nungambakkam", "Product Manager", "karan.singh@example.com", "inactive"),
+("727622bad008", "Preethi ", "1994-02-20", "2021-02-15", 45000, 3500, "Madurai", "Tidel Park", "Data Analyst", "preethi.iyer@gmail.com", "active"),
+("727622bad009", "Ravi Kumar", "1995-10-11", "2019-12-12", 100000, 9500, "Coimbatore", "RS", "Sales Manager", "ravi.kumar@example.com", "active"),
+("727622bad010", "Srinivasan", "1987-08-01", "2010-05-23", 95000, 7500, "Chennai", "Guindy", "Software Engineer", "srinivasan@company.com", "inactive");
+-- ALTER TABLE Employees CHANGE employee_status status ENUM('active', 'inactive');
+-- select * from employees
+-- ALTER TABLE Employees ADD COLUMN PhoneNumber VARCHAR(15);
+-- SELECT * FROM Employees;
+alter table employees
+drop column PhoneNumber
+
+
+
+
+
